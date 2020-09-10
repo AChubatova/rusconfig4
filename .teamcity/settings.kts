@@ -41,7 +41,7 @@ object sdflsflkjdfld : BuildType({
 })
 
 object Dfg : GitVcsRoot({
-    name = "dfg"
+    name = "password"
     url = "dfgdfg"
     authMethod = password {
         userName = "dfg"
