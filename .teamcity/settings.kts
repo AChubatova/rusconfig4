@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -26,6 +27,8 @@ version = "2020.1"
 
 project {
 
+    vcsRoot(Dfg)
+
     buildType(sdflsflkjdfld)
 }
 
@@ -34,5 +37,14 @@ object sdflsflkjdfld : BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
+    }
+})
+
+object Dfg : GitVcsRoot({
+    name = "dfg"
+    url = "dfgdfg"
+    authMethod = password {
+        userName = "dfg"
+        password = "credentialsJSON:120c89c8-24db-415b-88ee-ab4968029874"
     }
 })
